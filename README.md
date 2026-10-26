@@ -115,3 +115,15 @@ These skills help you write, refactor, and fix code.
   ```
   npx skills@latest add mattpocock/skills/obsidian-vault
   ```
+
+## Orchestration
+
+These skills let one agent lead a round of work while builder agents write the code and reviewer agents on other models check it.
+
+- **orchestrate** — Lead work as the orchestrator: builders write the code, other agents review it, you check and decide.
+- **delivery-loop** — Run one round from brief to landed change, with a builder, two reviewers and your own check.
+- **cross-review** — Review a round with independent reviewers on different models and repeat until every reviewer says ready.
+- **owner-gates** — Actions that need the owner's word every time (pushing main or tags, deploying, publishing, signing in, spending), with a hook that stops them.
+- **design-ui** — Design and check any screen: phone first, right-to-left, light and dark, touch targets, accessibility.
+
+Project-specific notes for `orchestrate` go in `orchestrate/references/projects/`, which is gitignored so they stay local.
